@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --prata: #dadbda;
+    --azul: #1A2A5F;
+    --cinza: #41433C;
+    --vermelho: #A24551;
+    --verde: #859E7A;
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+body {
+    background-color: var(--cinza);
+    padding-top: 100px;
+}
+
+.titulo {
+    text-align: center;
+    color: var(--preto);
+}
+
+.linkdiana {
+    color: var(--branco);
+}
+
+.chamada {
+    text-align: center;
+    color: var(--branco);
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu {
+    color: var(--branco);
+}
+
+.container {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--branco);
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo,
+.redes {
+    width: 25%;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a {
+    color: var(--preto);
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 3px;
+    background-color: var(--preto);
+    position: absolute;
+    top: 18px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after {
+    width: 55px;
+}
+
+.redes button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.redes button i {
+    font-size: 20px;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+.onzedesetembro {
+    color: var(--branco);
+}
+
+.listadeacontecimentos {
+    color: var(--branco);
+    font-size: medium;
+    text-decoration: none;
+}
+
+a {
+    color: var(--prata);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--azul);
+}
+
+.imggaleria {
+    width: 100%;
+}
+
+.imagens {
+    text-align: center;
+    width: 450px;
+    height: auto;
+    float: left;
+    margin-right: 26px;
+}
+
+.fotodiana {
+    width: 300px;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.vidadiana {
+    color: var(--branco);
+    text-indent: 30px;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+.tituloevideo {
+    text-align: center;
+}
+
+.quemfoidiana {
+    text-align: center;
+    color: var(--branco);
+}
+
+.ataquestitulo {
+    color: var(--branco);
+    text-align: center;
+}
+
+.texto {
+    color: var(--branco);
+    text-indent: 30px;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+footer {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    margin: 2px auto 2px;
+    position: fixed;
+}
+
+main {
+    height: 200px;
+    margin: 20px;
+    padding: 5em 2em 2em;
+    background-color: var(--cinza);
+    border-radius: 3px;
+    box-shadow: 0 0 10px;
+}
+
+.gripeespanhola {
+    text-align: center;
+    width: 300px;
+    height: auto;
+    position: relative;
+    display: flex;
+}
+
+.cadastro {
+    text-align: justify;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    padding: 5em 2em 2em;
+    background-color: var(--cinza);
+    border-radius: 3px;
+    box-shadow: 0 0 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.botaodeenviarcadastro {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--verde);
+    /* cor de fundo */
+    color: var(--branco);
+    /* cor do texto */
+    padding: 12px 20px;
+    /* preenchimento interno */
+    border: none;
+    /* remover borda */
+    border-radius: 4px;
+    /* arredondar bordas */
+    cursor: pointer;
+    /* cursor ao passar */
+    font-size: 16px;
+    /* tamanho da fonte */
+    text-transform: uppercase;
+    /* transformar texto em maiúsculo */
+    transition: background-color 0.3s ease;
+    /* transição suave */
+}
+
+.botaodeenviarcadastro:hover {
+    background-color: var(--prata);
+}
+
+.botaodeenviarcadastro:focus {
+    outline: none;
+    /* remover contorno ao focar */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* sombra suave */
+}
+
+.botaodeenviarcadastro:disabled {
+    cursor: not-allowed;
+    /* cursor padrão */
+}
+
+.cadastrocaixa {
+    padding: 4px;
+    /* preenchimento interno */
+    margin: 8px 0;
+    /* margem superior e inferior */
+    box-sizing: border-box;
+    /* inclui borda e preenchimento no tamanho total */
+    border: 1px solid var(--prata);
+    /* borda sólida cinza */
+    border-radius: 4px;
+    /* bordas arredondadas */
+    width: 100%;
+}

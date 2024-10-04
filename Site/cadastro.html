@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário de Cadastro</title>
+    <script src="https://kit.fontawesome.com/c2d2093777.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="imagens/logo.png" alt="Logo da Vestígios do Passado" /></a>
+            </div>
+            <div class="titulo">
+                <h1>Vestígios do Passado</h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="index.html">Página inicial</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="formulario.html">Fomulário</a>
+                    <a href="cadastro.html">Cadastro</a>
+                </nav>
+            </div>
+            <div class="redes">
+                <button><i class="fa-brands fa-instagram"></i></button>
+                <button><i class="fa-brands fa-youtube"></i></button>
+                <button><i class="fa-brands fa-x-twitter"></i></button>
+            </div>
+        </div>
+    </header>
+    <main class="cadastro">
+        <h1 style="color: var(--branco); text-align: center;">CADASTRO</h1>
+        <form id="cadastroForm" style="color: var(--branco);">
+            <label for="nome">Nome:</label>
+            <br>
+            <input class="cadastrocaixa" type="text" id="nome" name="nome" required />
+            <br>
+            <label for="idade">Idade:</label>
+            <br>
+            <input class="cadastrocaixa" type="number" id="idade" name="idade">
+            <br>
+            <label for="email">Digite o seu melhor email: </label>
+            <br>
+            <input class="cadastrocaixa" type="email" id="email" name="email" required />
+            <label for="senha">Senha:</label>
+            <br>
+            <input class="cadastrocaixa" type="password" id="senha" name="senha" required />
+            <br>
+            <label for="confirmarSenha">Digite a senha novamente:</label>
+            <br>
+            <input class="cadastrocaixa" type="password" id="confirmarSenha" name="confirmarSenha" required />
+            <br>
+            <label for="estado">Estado:</label>
+            <br>
+            <select class="cadastrocaixa" id="estado" name="estado" required>
+                <option value="">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
+            <br>
+            <label for="cidade">Cidade:</label>
+            <br>
+            <select class="input" id="cidade" name="cidade" disabled required>
+                <option value="">Selecione</option>
+            </select>
+            <br>
+            <button class="botaodeenviarcadastro" type="submit">Enviar</button>
+        </form>
+    </main>
+    <script src="cadastro.js"></script>
+    <footer>
+        <p style="text-align: center;">Todas as histórias são reais.</p>
+    </footer>
+</body>
+
+</html>
